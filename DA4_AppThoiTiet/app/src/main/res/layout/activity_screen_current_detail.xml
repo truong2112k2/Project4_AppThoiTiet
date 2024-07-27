@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".screen.ScreenCurrentWeatherByHour">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="10dp"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        >
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/icon_back"
+            android:scaleType="fitXY"
+            android:layout_marginStart="10dp"
+            android:padding="8dp"
+            android:background="@drawable/background_button"
+            >
+        </ImageButton>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_weight="1"
+            >
+        </View>
+        <ImageButton
+            android:id="@+id/btnQuestion"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/icon_question"
+            android:scaleType="fitXY"
+            android:layout_marginEnd="5dp"
+
+            android:padding="8dp"
+            android:background="@drawable/background_button"
+            >
+        </ImageButton>
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:padding="5dp"
+    android:background="@drawable/linear_shape_radius4corner"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imgWeather"
+            android:layout_width="150dp"
+            android:layout_gravity="center"
+            android:layout_height="150dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/icon_weather"
+            >
+        </ImageView>
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#5A5757"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            >
+        </View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:ignore="DuplicateIds,InefficientWeight">
+          <TextView
+              android:id="@+id/txtTemperature"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textColor="@color/white"
+              android:drawablePadding="10dp"
+              android:gravity="center|left"
+              android:drawableStart="@drawable/icon_temperaturesvg"
+              android:text="30 C"
+              tools:ignore="RtlHardcoded,UseCompatTextViewDrawableXml">
+          </TextView>
+            <TextView
+                android:id="@+id/txtSpeedWind"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:drawablePadding="10dp"
+                android:gravity="center|left"
+                android:drawableStart="@drawable/icon_wind_svg"
+                android:text="30km/h"
+
+                android:layout_marginTop="5dp"
+                tools:ignore="UseCompatTextViewDrawableXml">
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtAirPressrure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:gravity="center|left"
+                android:drawableStart="@drawable/icon_airpressure"
+                android:text="30km/h"
+                android:layout_marginTop="5dp"
+                android:drawablePadding="10dp"
+
+                tools:ignore="UseCompatTextViewDrawableXml">
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtRain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:drawableStart="@drawable/icon_rain"
+                android:text="30km/h"
+                android:gravity="center|left"
+                android:drawablePadding="10dp"
+
+                android:layout_marginTop="5dp"
+                tools:ignore="UseCompatTextViewDrawableXml">
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtSunUV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:drawableStart="@drawable/icon_uv_svg"
+                android:text="30km/h"
+                android:gravity="center|left"
+                android:layout_marginTop="5dp"
+                android:drawablePadding="10dp"
+
+                tools:ignore="UseCompatTextViewDrawableXml">
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtVision"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:drawableStart="@drawable/icon_vision"
+                android:text="30km/h"
+                android:gravity="center|left"
+                android:layout_marginTop="5dp"
+                android:drawablePadding="10dp"
+
+                tools:ignore="UseCompatTextViewDrawableXml">
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtDew"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:drawableStart="@drawable/icon_dew"
+                android:text="30km/h"
+                android:drawablePadding="10dp"
+                android:gravity="center|left"
+                android:layout_marginTop="5dp"
+                tools:ignore="UseCompatTextViewDrawableXml">
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/txtTimeSunRise"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:drawableStart="@drawable/icon_sunrise"
+                    android:text="30km/h"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:drawablePadding="10dp"
+                    android:layout_marginTop="5dp"
+                    tools:ignore="UseCompatTextViewDrawableXml">
+                </TextView>
+                <TextView
+                    android:id="@+id/txtTimeSunSet"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+
+                    android:drawableStart="@drawable/icon_sunsett"
+                    android:text="30km/h"
+                    android:drawablePadding="10dp"
+                    android:layout_marginTop="5dp"
+                    tools:ignore="UseCompatTextViewDrawableXml">
+                </TextView>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/txtTimeMoonRise"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:drawableStart="@drawable/icon_moonrisee"
+                    android:text="30km/h"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:drawablePadding="10dp"
+                    android:layout_marginTop="5dp"
+                    tools:ignore="UseCompatTextViewDrawableXml">
+                </TextView>
+                <TextView
+                    android:id="@+id/txtTimeMoonSet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:drawableStart="@drawable/icon_moonsett"
+                    android:text="30km/h"
+                    android:drawablePadding="10dp"
+                    android:layout_marginTop="5dp"
+                    tools:ignore="UseCompatTextViewDrawableXml">
+                </TextView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleShowWeatherHour"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

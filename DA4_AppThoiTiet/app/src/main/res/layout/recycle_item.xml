@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="120dp"
+    android:orientation="vertical"
+    android:paddingTop="15dp"
+    android:paddingEnd="10dp"
+    android:paddingStart="10dp"
+
+    android:gravity="center"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:background="@drawable/linear_shape_radius4corner"
+    android:layout_height="280dp">
+
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="17-7-2024"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/txtWeekdays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:text="Thứ 3"
+        tools:ignore="HardcodedText,UseCompatTextViewDrawableXml" />
+    <ImageView
+        android:id="@+id/imgWeather"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/icon_weather"
+        >
+    </ImageView>
+    <TextView
+        android:id="@+id/txtTemperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="5dp"
+        android:drawableStart="@drawable/icon_temperaturesvg"
+        android:drawablePadding="5dp"
+        android:textSize="12sp"
+        android:text="30 C"
+        tools:ignore="HardcodedText,UseCompatTextViewDrawableXml" />
+
+    <TextView
+        android:id="@+id/txtHumidity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:textSize="12sp"
+        android:drawableStart="@drawable/icon_humiditysvg"
+        android:drawablePadding="5dp"
+        android:text="10"
+        tools:ignore="HardcodedText,UseCompatTextViewDrawableXml" />
+
+    <TextView
+        android:id="@+id/txtSpeedWind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+
+        android:drawableStart="@drawable/icon_wind_svg"
+        android:drawablePadding="5dp"
+        android:text="10km/h"
+
+        tools:ignore="HardcodedText,UseCompatTextViewDrawableXml" />
+
+</LinearLayout>

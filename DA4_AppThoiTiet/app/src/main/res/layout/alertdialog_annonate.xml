@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/backgroud_hourdetail"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:text="Chú thích"
+
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        >
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        android:weightSum="2"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="21sp"
+            android:drawableStart="@drawable/icon_temperaturesvg"
+            android:text="Nhiệt độ"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            >
+        </TextView>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:textSize="21sp"
+            android:drawableStart="@drawable/icon_humiditysvg"
+            android:text="Độ ẩm"
+            android:textColor="@color/white"
+            android:drawablePadding="5dp"
+            android:layout_gravity="center"
+            >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+
+        android:weightSum="2"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="21sp"
+            android:drawableStart="@drawable/icon_chancerain"
+            android:text="Lượng mưa"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+
+            >
+        </TextView>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="21sp"
+            android:drawableStart="@drawable/icon_rain"
+            android:text="Tỉ lệ mưa"
+            android:textColor="@color/white"
+            android:gravity="center"
+
+            android:drawablePadding="5dp"
+            android:layout_gravity="center"
+
+
+            >
+        </TextView>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:weightSum="2"
+
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="21sp"
+            android:drawableStart="@drawable/icon_airpressure"
+            android:text="Áp xuất "
+            android:drawablePadding="5dp"
+            android:gravity="center"
+
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+
+            >
+        </TextView>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="21sp"
+            android:drawableStart="@drawable/icon_snow"
+            android:text="Tỉ lệ tuyết rơi"
+            android:textColor="@color/white"
+            android:gravity="center"
+
+            android:drawablePadding="5dp"
+            android:layout_gravity="center"
+
+            >
+        </TextView>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+
+        android:weightSum="2"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="21sp"
+            android:drawableStart="@drawable/icon_winddirection"
+            android:text="Hướng gió"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+
+            >
+        </TextView>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="21sp"
+            android:drawableStart="@drawable/icon_vision"
+            android:text="Tầm nhìn"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:drawablePadding="5dp"
+            android:layout_gravity="center"
+            >
+        </TextView>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+
+        android:weightSum="2"
+        android:orientation="horizontal"
+        >
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="21sp"
+            android:drawableStart="@drawable/icon_uv_svg"
+            android:text="Tia UV"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+
+            >
+        </TextView>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="21sp"
+            android:drawableStart="@drawable/icon_dew"
+            android:text="Sương mù"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:drawablePadding="5dp"
+            android:layout_gravity="center"
+            >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+
+        android:weightSum="2"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="21sp"
+            android:drawableStart="@drawable/icon_sunrise"
+            android:text="Bình minh"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+
+            >
+        </TextView>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="21sp"
+            android:drawableStart="@drawable/icon_sunsett"
+            android:text="Hoàng hôn"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:drawablePadding="5dp"
+            android:layout_gravity="center"
+            >
+        </TextView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+
+        android:weightSum="2"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="21sp"
+            android:drawableStart="@drawable/icon_moonrisee"
+            android:text="Trăng lên"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+
+            >
+        </TextView>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="21sp"
+            android:drawableStart="@drawable/icon_moonsett"
+            android:text="Trăng khuyết"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:drawablePadding="5dp"
+            android:layout_gravity="center"
+            >
+        </TextView>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="21sp"
+        android:drawableStart="@drawable/icon_wind_svg"
+        android:text="Tốc độ gió"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:drawablePadding="5dp"
+        android:layout_gravity="center"
+        >
+    </TextView>
+
+
+</LinearLayout>

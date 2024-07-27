@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+    <ScrollView
+        android:id="@+id/scroolview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="ScrollViewSize">
+            <ImageView
+                android:id="@+id/imgGif"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="250dp"
+                >
+
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/allview"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+                <Spinner
+                    android:id="@+id/my_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginStart="10dp"
+
+                    android:layout_marginEnd="10dp"
+                    android:layout_height="wrap_content" />
+
+                <!--        linear1-->
+                <LinearLayout
+                    android:id="@+id/view_currentWeatherByHour"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/linear_shape_radius4corner"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+                    >
+
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        >
+                        <ImageView
+                            android:id="@+id/imgCurrentWeather"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/icon_weather"
+                            >
+                        </ImageView>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <TextView
+                                android:id="@+id/txtLocation"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:textColor="@color/white"
+                                android:textSize="25sp"
+                                android:layout_gravity="center"
+
+                                >
+                            </TextView>
+                            <TextView
+                                android:id="@+id/txtTemperature"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:padding="10dp"
+                                android:textColor="@color/white"
+                                android:textSize="28sp"
+                                android:layout_gravity="center"
+                                android:textStyle="bold"
+                                >
+                            </TextView>
+                            <TextView
+                                android:id="@+id/txtLocationTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:padding="5dp"
+                                android:textColor="@color/white"
+                                android:layout_marginBottom="10dp"
+                                android:textSize="15sp"
+                                android:layout_marginTop="5dp"
+                                android:layout_gravity="center"
+                                android:textStyle="bold"
+                                >
+                            </TextView>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="#805A5353"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        >
+
+                    </View>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:orientation="vertical"
+                            >
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Gió"
+                                android:textColor="@color/white"
+                                android:textSize="15sp" />
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="16dp"
+                                android:src="@drawable/icon_wind" />
+                            <TextView
+                                android:id="@+id/txtSpeedWind"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:textColor="@color/white"
+
+                                android:textSize="13sp"
+                                />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginStart="35dp"
+                            android:layout_marginEnd="35dp"
+                            android:padding="10dp"
+                            android:orientation="vertical"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Độ ẩm"
+                                android:textColor="@color/white"
+                                android:textSize="15sp" />
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="16dp"
+                                android:src="@drawable/icon_humidity" />
+                            <TextView
+                                android:id="@+id/txtHumidity"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:textColor="@color/white"
+
+                                android:textSize="13sp"
+                                />
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="10dp"
+
+                            android:orientation="vertical"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="UV"
+                                android:textColor="@color/white"
+                                android:textSize="15sp" />
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="16dp"
+                                android:src="@drawable/icon_uv" />
+                            <TextView
+                                android:id="@+id/txtSunUV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:textColor="@color/white"
+
+                                android:textSize="13sp"
+                                tools:ignore="HardcodedText"
+                                />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+                <!--        linear2-->
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Thời tiết 9 ngày tới"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:layout_marginStart="10dp"
+                    >
+                </TextView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycle10daynext"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    tools:listitem="@layout/recycle_item"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    >
+                </androidx.recyclerview.widget.RecyclerView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Lượng mưa 9 ngày tới"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:layout_marginStart="10dp"
+                    tools:ignore="HardcodedText">
+                </TextView>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycleChanceOfRain"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    tools:listitem="@layout/recycle_item"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    >
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+            </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>
